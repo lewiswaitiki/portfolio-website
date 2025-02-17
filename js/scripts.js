@@ -55,13 +55,3 @@ window.addEventListener('scroll', function() {
         });
     }
 });
-
-
-//toggle navigation menu on mobile
-
-const toggleButton = document.getElementById('toggle-button');
-const navMenu = document.querySelector('nav ul');
-
-toggleButton.addEventListener('click', () => {
-  navMenu.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
-});
