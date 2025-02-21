@@ -5,13 +5,16 @@
     <!--ensure the webpage is responsive,scaling properly on mobile devices like phones-->
     <meta name="viewport"  content="width=device-width,initial-scale=1.0">
     <!--provides brief description of the page which is important for search engines-->
-    <meta name="description" content ="portfolio of lewis ,python Developer">
+    <meta name="description" content ="portfolio of lewis ,a python Developer">
+    <meta name="keywords" content="Lewis, Portfolio, Python Developer, Web Development, Flask, HTML, CSS, JavaScript">
+    <meta name="author" content="Lewis Waitiki">
     <title>LEWIS PORTFOLIO</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!--include fontawsome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- add javascript-->
-    <script src=""></script>
+    
 
   </head>
   <body>
@@ -33,113 +36,70 @@
       </ul>
     </nav>
     </header>
-
-    <script>
-      const toggleButton = document.getElementById('toggle-button');
-      const navMenu = document.querySelector('nav ul');
-  
-      toggleButton.addEventListener('click', () => {
-          navMenu.classList.toggle('show'); // Toggle the 'show' class on the menu
-      });
-  </script>
- 
-     <!--Hero section-->
-     <section class="hero">
-      <div class="hero-content">
-        <h1>Hi I'm Lewis</h1>
-        <p>Enthuthiast About Python Development | Web Technology  Enthuthiast</p>
-        <a href=" #projects" class="btn">View My Work</a>
-      </div>
-     </section>
-<!--About Section-->
-     <section id="about">
-      <h2>About Me</h2>
-      <p>"I am a passionate Python developer with a strong interest in web technologies. I specialize in building responsive and user-friendly websites using HTML, CSS, and JavaScript. Additionally, I have experience developing dynamic web applications with Flask, a Python-based web framework. I am constantly learning and expanding my skill set to create innovative and efficient solutions."</p>
-     </section>
-     <section id="Projects">
-      <h2>My Projects</h2>
-      <div class="Project">
-        <img src="" alt="project 1">
-        <h3>E-commerce Project</h3>
-        <p>Developed a full-fledged e-commerce website using Flask,
-          HTML, CSS, Python, and Postgres</p>
-        <a href="https://github.com/lewiswaitiki/Ecommerce" target="_blank">View on GitHub</a>
-      </div>
-     </section>
-     <section id="skills">
-      <h2>My Skills</h2>
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Hi I'm Lewis</h1>
+          <p> Python Developer | Web Developer</p>
+          <a href=" #Projects" class="btn">View My Work</a>
+        </div>
+      </section>
+  <!--About Section-->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>"I am a passionate Python developer with a strong interest in web technologies. I specialize in building responsive and user-friendly websites using HTML, CSS, and JavaScript. Additionally, I have experience developing dynamic web applications with Flask, a Python-based web framework. I am constantly learning and expanding my skill set to create innovative and efficient solutions."</p>
+      </section>
+      <section id="Projects">
+        <h2>My Projects</h2>
+        <div class="Project">
+          <img src="" alt=" E-Commerce Project">
+          <h3>E-commerce Project</h3>
+          <p>Developed a full-fledged e-commerce website using Flask,
+            HTML, CSS, Python, and Postgres</p>
+          <a href="https://github.com/lewiswaitiki/Ecommerce" target="_blank">View on GitHub</a>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+          <h4>python</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width: 60%;">60%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="progress">
+              <div class="progress-bar" style="width: 30%;">30%</div>
+          </div>
+        </div>
       <div class="skill">
-        <h4>python</h4>
+        <h4>HTML</h4>
         <div class="progress">
-          <div class="progress-bar" style="width: 60%;">60%</div>
+            <div class="progress-bar" style="width: 80%;">80%</div>
         </div>
       </div>
       <div class="skill">
-        <h4>JavaScript</h4>
+        <h4>CSS</h4>
         <div class="progress">
-            <div class="progress-bar" style="width: 30%;">30%</div>
+            <div class="progress-bar" style="width: 75%;">75%</div>
         </div>
       </div>
-     <div class="skill">
-      <h4>HTML</h4>
-      <div class="progress">
-          <div class="progress-bar" style="width: 80%;">80%</div>
-      </div>
-    </div>
-    <div class="skill">
-      <h4>CSS</h4>
-      <div class="progress">
-          <div class="progress-bar" style="width: 75%;">75%</div>
-      </div>
-    </div>
-     </section>
-     <script>
-      const skillsSection = document.getElementById('skills');
-const skills = document.querySelectorAll('.progress-bar');
-let animated = false; // To ensure animation runs only once
-
-window.addEventListener('scroll', function() {
-    const sectionPosition = skillsSection.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.2;
-
-    if (sectionPosition < screenPosition && !animated) {
-        animated = true; // Prevent further animations
-        skills.forEach(skill => {
-            const width = skill.style.width; // Get the current width from inline style
-            skill.style.width = '0%'; // Reset width before animation
-            setTimeout(() => {
-                skill.style.width = width; // Animate to original width
-            }, 100);
-        });
-    }
-});
-
-     </script>
-     <section id="contacts">
-       <h2>Contact Me</h2>
-       <form action="#" method="post" id="form">
-        <input type="text" name="name" placeholder="your name" required>
-        <input type="email" name="email" placeholder="your email" required>
-        <textarea name="Message" id="" placeholder="your message" required></textarea>
-        <button type="submit">Send Message</button>
-       </form>
-     </section>
-     <script>
-      // Form validation
-      const form = document.querySelector('form');
-      form.addEventListener('submit', function(e) {
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const message = form.message.value.trim();
-
-        if (!name || !email || !message) {
-          alert('Please fill out all the fields');
-          e.preventDefault(); // Prevent form submission
-        } else {
-          alert('Thank You For Your Message!');
-        }
-      });
-    </script>
+      </section>
+      
+      <section id="contacts">
+        <h2>Contact Me</h2>
+        <form action="#" method="post" id="form">
+          <input type="text" name="name" placeholder="your name" required>
+          <input type="email" name="email" placeholder="your email" required>
+          <textarea name="Message" id="" placeholder="your message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+     </main>
+     <!-- JavaScript for smooth scrolling and form validation -->
+     <script src="js/scripts.js"></script>
   </body>
   <footer>
     <!--the &copy represents the copyright symbol-->
@@ -153,18 +113,5 @@ window.addEventListener('scroll', function() {
 
 
 
-<script>
-  //smooth scrolling
-document.querySelectorAll('nav a').forEach(anchor=>{
-  anchor.addEventListener('click',function(e){
-    e.preventDefault();
-    const targetid = this.getAttribute('href');
-    const targetElement = document.querySelector(targetid);
-    targetElement.scrollIntoView({
-      behavior:'smooth',
-      block:'start'
-    });
-  });
-});
 
-</script>
+
