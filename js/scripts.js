@@ -75,3 +75,15 @@ window.addEventListener('scroll', function() {
     });
   });
   
+const servicesSection = document.getElementById('services');
+
+window.addEventListener('scroll', () => {
+  const sectionPosition = servicesSection.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.2;
+
+  if (sectionPosition < screenPosition) {
+    servicesSection.classList.add('visible');
+  }
+});
+
+

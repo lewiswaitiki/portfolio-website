@@ -210,7 +210,7 @@ nav ul li a.active {
 }
 
 /* Contacts Section */
-#contacts {
+#contact {
   padding: 2rem;
   text-align: center;
   background-color: #ffffff;
@@ -326,4 +326,150 @@ footer {
   nav ul {
     display: flex; /* Show menu items as flex on desktop */
   }
+}
+
+
+/* Services Section */
+#services {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #f9f9f9;
+}
+
+.service i {
+  /* font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 1rem; */
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #ff6f61, #ff4b3a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #666;
+}
+
+#services .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin: 3rem 0 2rem; /* Add margin for spacing */
+}
+
+#services .btn:hover {
+  background: #ff4b3a;
+  transform: translateY(-3px); /* Add a subtle hover effect */
+}
+
+/* carousel */
+/* Carousel Container */
+.image-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Inner Container */
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Carousel Images */
+.carousel-inner img {
+  width: 100%;
+  display: none; /* Hide all images by default */
+  border-radius: 8px;
+}
+
+.carousel-inner img.active {
+  display: block; /* Show the active image */
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: white;
 }
