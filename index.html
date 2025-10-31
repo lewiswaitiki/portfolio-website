@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Lewis Waitiki, a Python and Web Developer">
-    <meta name="keywords" content="Lewis Waitiki, Portfolio, Python Developer, Web Development, Flask, HTML, CSS, JavaScript">
-    <meta name="author" content="Lewis Waitiki">
-    <title>Lewis Waitiki Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lewis Waitiki - Web Developer Portfolio" />
+    <title>Lewis Waitiki | Web Developer</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <header>
-      <div class="logo">My Portfolio</div>
+      <div class="logo">Lewis Waitiki</div>
       <nav>
         <button id="toggle-button" aria-label="Toggle Menu">☰</button>
         <ul>
-          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
           <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
           <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
           <li><a href="#Projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
@@ -27,7 +25,7 @@
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="hero">
+      <section id="hero"  class="reveal"> 
         <div class="hero-content">
           <h1>Hi, I'm Lewis Waitiki</h1>
           <p>Python Developer | Web Developer</p>
@@ -36,19 +34,23 @@
       </section>
 
       <!-- About Section -->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I am a passionate Python developer with a strong interest in web technologies. 
-          I specialize in building responsive and user-friendly websites using HTML, CSS, and JavaScript. 
-          Additionally, I have experience developing dynamic web applications with Flask, a Python-based web framework. 
-          I am constantly learning and expanding my skill set to create innovative and efficient solutions.
-        </p>
-        <a href="cv/lewis_waitiki_resume.pdf" class="btn" target="_blank">Download CV</a>
+      <section id="about" class="reveal">
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate Python developer with a strong interest in web technologies. 
+            I specialize in building responsive and user-friendly websites using HTML, CSS, and JavaScript. 
+            Additionally, I have experience developing dynamic web applications with Flask, a Python-based web framework. 
+            I am constantly learning and expanding my skill set to create innovative and efficient solutions.
+          </p>
+          <div class="btn-wrapper">
+            <a href="cv/lewis_waitiki_resume.pdf" class="btn" target="_blank">Download CV</a>
+          </div>
+        </div>
       </section>
 
       <!-- Services Section -->
-      <section id="services">
+      <section id="services" class="reveal">
         <h2>Services I Offer</h2>
         <div class="services-container">
           <div class="service">
@@ -70,22 +72,30 @@
             <a href="#contact" class="btn">Learn More</a>
           </div>
         </div>
-        <a href="#contact" class="btn">Get in Touch</a>
+        <!-- <a href="#contact" class="btn">Get in Touch</a> -->
       </section>
 
       <!-- Projects Section -->
-      <section id="Projects">
+      <section id="Projects" class="reveal">
         <h2>My Projects</h2>
-        <div class="Project">
-          <img src="images/ecommerce.jpg" alt="E-commerce Project Screenshot">
-          <h3>E-commerce Project</h3>
-          <p>Developed a full-fledged e-commerce website using Flask, HTML, CSS, Python, and PostgreSQL.</p>
-          <a href="https://github.com/lewiswaitiki/Ecommerce" target="_blank">View on GitHub</a>
+        <div class="projects-container">
+          <div class="Project">
+            <img src="images/ecommerce.jpg" alt="E-commerce Project Screenshot">
+            <h3>E-commerce Project</h3>
+            <p>Developed a full-fledged e-commerce website using Flask, HTML, CSS, Python, and PostgreSQL.</p>
+            <a href="https://github.com/lewiswaitiki/Ecommerce" target="_blank">View on GitHub</a>
+          </div>
+          <div class="Project">
+            <img src="images/ecommerce.jpg" alt="E-commerce Project Screenshot">
+            <h3>E-commerce Project</h3>
+            <p>Developed a full-fledged e-commerce website using Flask, HTML, CSS, Python, and PostgreSQL.</p>
+            <a href="https://github.com/lewiswaitiki/Ecommerce" target="_blank">View on GitHub</a>
+          </div>
         </div>
       </section>
 
       <!-- Skills Section -->
-      <section id="skills">
+      <section id="skills" class="reveal">
         <h2>My Skills</h2>
         <div class="skill">
           <h4>Python</h4>
@@ -114,7 +124,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
+      <section id="contact" class="reveal">
         <h2>Contact Me</h2>
         <form action="#" method="post" id="form">
           <label for="name">Your Name</label>
@@ -131,31 +141,46 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Lewis Waitiki | All Rights Reserved</p>
-      <div class="contact-info">
-        <p>Get in touch:</p>
-        <a href="tel:+254718832651" class="contact-link">
-          <i class="fas fa-phone"></i>+254 718 832 651
-        </a>
-        <a href="mailto:lewiswaitiki9@gmail.com" class="contact-link">
-          <i class="fas fa-envelope"></i>lewiswaitiki9@gmail.com
-        </a>
+    <footer class="footer reveal">
+      <div class="footer-container">
+        
+        <!-- Logo or Branding -->
+        <div class="footer-column">
+          <div class="footer-logo">LW</div>
+          <p>Lewis Waitiki</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:lewiswaitiki9@gmail.com">lewiswaitiki9@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+254718832651">+254 718 832 651</a></p>
+          <div class="footer-socials">
+            <a href="https://github.com/lewiswaitiki" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/lewis_waitiki/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=254718832651" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
       </div>
 
-      <div class="socials">
-        <a href="https://github.com/lewiswaitiki" target="_blank" aria-label="GitHub" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/lewis_waitiki/" target="_blank" aria-label="Instagram" title="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=254718832651" target="_blank" aria-label="WhatsApp" title="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
+      <hr>
+      <p>&copy; 2025 Lewis Waitiki | All Rights Reserved</p>
     </footer>
+
 
     <!-- JavaScript -->
     <script src="js/scripts.js"></script>
