@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu.classList.toggle('show');
   });
 
+  // 🔒 Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target);
+    const isClickOnToggle = toggleButton.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnToggle) {
+      navMenu.classList.remove('show');
+    }
+  });
+
   // 🧠 Smooth Scrolling
   document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
