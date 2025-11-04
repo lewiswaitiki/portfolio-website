@@ -142,11 +142,20 @@ nav ul li a.active {
   padding: 2rem;
   text-align: left;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
 .about-content{
   margin: 100px auto;
+  /* background-color: #ff4b3a; */
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px;
 }
 
 .about-content{
@@ -287,8 +296,9 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 form input,
@@ -602,4 +612,9 @@ h2{
     padding: 2rem 1rem;
     height: auto;
   }
+
+  .about-content{
+    width: 100%;
+  }
+
 }
