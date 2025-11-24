@@ -37,17 +37,22 @@
 
       <!-- About Section -->
       <section id="about" class="reveal">
-        <div class="about-content">
-          <h2>About Me</h2>
-          <p>
-            I am a passionate Python developer with a strong interest in web technologies. 
-            I specialize in building responsive and user-friendly websites using HTML, CSS, and JavaScript. 
-            Additionally, I have experience developing dynamic web applications with Flask, a Python-based web framework. 
-            I am constantly learning and expanding my skill set to create innovative and efficient solutions.
-          </p>
-          <div class="btn-wrapper">
-            <a href="cv/lewis_waitiki_resume.pdf" class="btn" target="_blank">Download CV</a>
-          </div>
+        <div class="about-container" id="about-container">
+            <div class="about-content">
+              <h2>About Me</h2>
+              <p>
+                I am a passionate Python developer with a strong interest in web technologies. 
+                I specialize in building responsive and user-friendly websites using HTML, CSS, and JavaScript. 
+                Additionally, I have experience developing dynamic web applications with Flask, a Python-based web framework. 
+                I am constantly learning and expanding my skill set to create innovative and efficient solutions.
+              </p>
+              <div class="btn-wrapper">
+                <a href="cv/lewis_waitiki_resume.pdf" class="btn" target="_blank">Download CV</a>
+              </div>
+            </div>
+            <div class="about-image">
+                <img src="images/portfolio-img.jpg" alt="portfolio image" id="about-image">
+            </div>
         </div>
       </section>
 
@@ -84,6 +89,7 @@
           <div class="Project">
             <img src="images/ecommerce.jpg" alt="E-commerce Project Screenshot">
             <h3>E-commerce Project</h3>
+            
             <p>Developed a full-fledged e-commerce website using Flask, HTML, CSS, Python, and PostgreSQL.</p>
             <a href="https://github.com/lewiswaitiki/Ecommerce" target="_blank">View on GitHub</a>
           </div>
@@ -98,48 +104,75 @@
 
       <!-- Skills Section -->
       <section id="skills" class="reveal">
-        <h2>My Skills</h2>
-        <div class="skill">
-          <h4>Python</h4>
-          <div class="progress">
-            <div class="progress-bar" style="width: 60%;">70%</div>
+        <div class="skills-container">
+            <h2>My Skills</h2>
+            <div class="skill">
+              <h4>Python</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%;">70%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <h4>JavaScript</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 40%;">40%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <h4>HTML</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%;">80%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <h4>CSS</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%;">75%</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="skill">
-          <h4>JavaScript</h4>
-          <div class="progress">
-            <div class="progress-bar" style="width: 40%;">40%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <h4>HTML</h4>
-          <div class="progress">
-            <div class="progress-bar" style="width: 80%;">80%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <h4>CSS</h4>
-          <div class="progress">
-            <div class="progress-bar" style="width: 75%;">75%</div>
-          </div>
-        </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="reveal">
-        <h2>Contact Me</h2>
-        <form action="#" method="post" id="form">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-          
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-          
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-          
-          <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-options">
+          <h2>Get in Touch</h2>
+          <p>Have questions or ready to transform your business with AI automation?</p>
+          <div class="contact-option">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <h5>lewiswaitiki9@gmail.com</h5>
+          </div>
+          <div class="contact-option">
+            <i class="fab fa-whatsapp"></i>
+            <h4>WhatsApp</h4>
+            <h5>+254 718 832 651</h5>
+          </div>
+          <div class="contact-option">
+            <i class="fab fa-instagram"></i>
+            <h4>Instagram</h4>
+            <h5>@lewis_waitiki</h5>
+          </div>
+          <div class="contact-option">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Phone</h4>
+            <h5>+254 718 832 651</h5>
+          </div>
+        </div>
+        <div>
+          <form action="#" method="post" id="form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
 
