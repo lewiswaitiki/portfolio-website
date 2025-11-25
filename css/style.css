@@ -331,6 +331,9 @@ nav ul li a.active {
 #Projects h2{ 
   color: white;
   margin-top:1.5rem;
+  text-decoration: underline;
+  /* text-underline-offset: 6px; */
+  text-decoration-color: #ff6f61;
 }
 
 
