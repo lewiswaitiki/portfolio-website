@@ -255,49 +255,77 @@ nav ul li a.active {
   height: 100vh;
 }
 
-/* Skills Section */
-#skills {
-  padding: 2rem;
-  text-align: center;
-  background-color: #ffffff;
-}
 
-.skills-container {
-  background-color: #666;
-  border-radius: 10px;
-  padding:2rem;
-}
-
-.skill {
-  margin: 1rem 0;
-}
-
-.progress {
-  background: #e0e0e0;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-top: 5px;
-}
-
-.progress-bar {
-  width: 0%;
-  background: #ff6f61;
-  height: 20px;
-  text-align: center;
+#tech-stack {
+  background-color: #0f0f0f;
   color: white;
-  transition: width 1s ease;
+  padding: 4rem 2rem;
+  text-align: center;
 }
+
+.tech-stack-container {
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#tech-stack h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+}
+
+#tech-stack p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+  /* filter: brightness(0) invert(1); */
+}
+
+.tech-item span {
+  font-size: 0.95rem;
+  color: #eee;
+}
+
+.tech-item:hover {
+  transform: scale(1.1);
+}
+
+
+
+
 
 /* Projects Section */
 #Projects {
-  margin: 1.5rem 0;
-  margin: 2rem;
-  background-color: #f9f9f9;
-  background-image: url(../images/projects-bg.png);
-  background-size: cover;
-  background-position: center;
+  /* margin: 1.5rem 0; */
+  /* margin: 2rem; */
+  padding: 2rem;
   text-align: center;
-  border-radius: 10px;
+  width: 100%;
+  background-color:black;
+
 }
 
 #Projects h2{ 
@@ -309,10 +337,13 @@ nav ul li a.active {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  /* background-color: #666; */
+  gap: 2rem; 
   border-radius: 10px;
   padding: 2rem;
+  background-image: url(../images/projects-bg.png);
+  background-size: cover;
+  background-position: center; 
+  overflow: hidden;
 }
 
 .Project {
@@ -329,7 +360,7 @@ nav ul li a.active {
   transform: scale(1.02);
 }
 
-.Project .img {
+.Project img {
   max-width: 100%;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -738,7 +769,6 @@ h2{
   /* Section spacing */
   #about,
   #services,
-  #skills,
   #contact {
     padding: 2rem 1rem;
     height: auto;
@@ -786,5 +816,19 @@ h2{
   .contact-option h4,
   .contact-option h5 {
     text-align: center;
+  }
+
+  
+  .tech-icons {
+    gap: 1rem;
+  }
+
+  .tech-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #tech-stack h2 {
+    font-size: 2rem;
   }
 }
