@@ -350,10 +350,11 @@ nav ul li a.active {
 }
 
 .Project {
-  margin: 1.5rem 0;
+  /* margin: 1.5rem 0; */
   background: white;
-  border-radius: 8px;
-  padding: 1rem;
+  overflow: hidden; 
+  border-radius: 12px;
+  /* padding: 1rem; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -367,10 +368,35 @@ nav ul li a.active {
   max-width: 100%;
   border-radius: 8px;
   margin-bottom: 1rem;
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
 }
 
 .Project h3 {
   margin: 0.5rem 0;
+}
+
+.Project p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.Project a {
+  display: inline-block;
+  /* margin-top: auto; */
+  margin-bottom: 1.5rem;
+  padding: 10px 15px;
+  background: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.Project a:hover {
+  background: #ff4b3a;
 }
 
 /* Contacts Section */
