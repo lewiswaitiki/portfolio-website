@@ -3,214 +3,490 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Lewis Waitiki - Web Developer Portfolio" />
-    <meta name="keywords" content="Python Developer, Web Developer, Flask, Django, Portfolio, Nairobi">
-    <meta name="author" content="Lewis Waitiki">
-    <title>Lewis Waitiki | Web Developer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="Lewis Waitiki - Full Stack Web Developer Portfolio"
+    />
+    <meta
+      name="keywords"
+      content="Python Developer, Web Developer, Flask, Django, Portfolio, Nairobi"
+    />
+    <meta name="author" content="Lewis Waitiki" />
+    <title>Lewis Waitiki | Full Stack Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
+    <!-- Header -->
     <header>
-      <div class="logo">Lewis Waitiki</div>
-      <nav>
-        <button id="toggle-button" aria-label="Toggle Menu">☰</button>
-        <ul>
-          <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
-          <li><a href="#Projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- Hero Section -->
-      <section id="hero"  class="reveal"> 
-        <div class="hero-content">
-          <h1>Hi, I'm Lewis Waitiki</h1>
-          <p>Python Developer | Web Developer</p>
-          <a href="#Projects" class="btn">View My Work</a>
-        </div>
-      </section>
+      <div class="container nav-container">
+        <a href="#" class="logo">Lewis<span>Waitiki</span></a>
 
-      <!-- About Section -->
-      <section id="about" class="reveal">
-        <div class="about-container" id="about-container">
-            <div class="about-content">
-              <h2>About Me</h2>
-              <p>
-                I am a passionate Python developer with a strong interest in web technologies.I am a recent graduate with a Bachelor of Science in 
-                Computer Science from The Catholic University of Eastern Africa, 
-                passionate about building scalable, user‑friendly software solutions. 
-                I have hands‑on expertise in web development using HTML, CSS, JavaScript, and Python, with practical experience in backend frameworks such as Django and Flask. I am also proficient in WordPress, where I have designed and customized websites, integrated plugins, and optimized performance for better user experience and SEO visibility. Additionally, I am familiar with RESTful APIs, JSON, and database management, enabling me to integrate systems and support dynamic applications.
-                I am constantly learning and expanding my skill set to create innovative and efficient solutions.
-              </p>
-              <div class="btn-wrapper">
-                <a href="cv/lewis_waitiki_resume.pdf" class="btn" target="_blank">Download CV</a>
-              </div>
-            </div>
-            <div class="about-image">
-                <img src="images/portfolio-img.jpg" alt="portfolio image" id="about-image">
-            </div>
-        </div>
-      </section>
-
-      <!-- Services Section -->
-      <section id="services" class="reveal">
-        <h2>Services I Offer</h2>
-        <div class="services-container">
-          <div class="service">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Web Development</h3>
-            <p>I build responsive and user-friendly websites using modern technologies like HTML, CSS, JavaScript, and Flask/Django.</p>
-            <a href="#contact" class="btn">Learn More</a>
-          </div>
-          <div class="service">
-            <i class="fas fa-server"></i>
-            <h3>Backend Development</h3>
-            <p>I develop robust backend systems using Python, Flask, and Django to handle data processing, APIs, and server-side logic.I also have experience working with databases like Postgres and MySQL</p>
-            <a href="#contact" class="btn">Learn More</a>
-          </div>
-          <div class="service">
-            <i class="fas fa-bug"></i>
-            <h3>Debugging & Optimization</h3>
-            <p>I provide code reviews, debugging, and optimization services to improve the performance and efficiency of your web applications.</p>
-            <a href="#contact" class="btn">Learn More</a>
-          </div>
-        </div>
-        <!-- <a href="#contact" class="btn">Get in Touch</a> -->
-      </section>
-
-      <!-- Projects Section -->
-      <section id="Projects" class="reveal">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-          <div class="Project">
-            <img src="images/ecommerce-pr-img.png" alt="E-commerce Project Screenshot">
-            <h3>E-commerce Project</h3>
-            
-            <p>Developed a full-fledged e-commerce website using Flask, HTML, CSS, Python, and PostgreSQL.</p>
-            <a href="https://github.com/lewiswaitiki/Ecommerce" target="_blank">View on GitHub</a>
-          </div>
-          <div class="Project">
-            <img src="images/unistay-img.png" alt="E-commerce Project Screenshot" id="project-img">
-            <h3>Unistay Project</h3>
-            <p>Developed a fully functional fullstack webapp catered to help students joining universities browse for accomodation within their institutions</p>
-            <a href="https://github.com/lewiswaitiki/unistay" target="_blank">View on GitHub</a>
-          </div>
-          <div class="Project">
-            <img src="images/bilal-automarts-img.png" alt="E-commerce Project Screenshot" id="project-img">
-            <h3>Bilal Automarts</h3>
-            <p>A car Website that allow customers to browse the inventory enquire about cars of interest and book test drives</p>
-            <a href="https://github.com/lewiswaitiki/bilal_automarts" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-      </section>
-
-
-      <section id="tech-stack" class="reveal">
-        <div class="tech-stack-container">
-          <h2>My Tech Stack</h2>
-          <p>I use modern, powerful tools to build solutions that are fast, secure, and ready to scale.</p>
-          <div class="tech-icons">
-            <div class="tech-item"><img src="images/javascript.png" alt="JavaScript"><span>JavaScript</span></div>
-            <div class="tech-item"><img src="images/python.png" alt="Python"><span>Python</span></div>
-            <div class="tech-item"><img src="images/flask.png" alt="Flask"><span>Flask</span></div>
-            <div class="tech-item"><img src="images/postgresql.jpg" alt="PostgreSQL"><span>PostgreSQL</span></div>
-            <div class="tech-item"><img src="images/django.png" alt="Django"><span>Django</span></div>
-          </div>
-        </div>
-      </section>
-
-  
-
-      <!-- Contact Section -->
-      <section id="contact" class="reveal">
-        <div class="contact-options">
-          <h2>Get in Touch</h2>
-          <p>Have questions or ready to transform your business with a powerful software solution?</p>
-          <div class="contact-option">
-            <i class="fas fa-envelope"></i>
-            <h4>Email</h4>
-            <h5>lewiswaitiki9@gmail.com</h5>
-          </div>
-          <div class="contact-option">
-            <i class="fab fa-whatsapp"></i>
-            <h4>WhatsApp</h4>
-            <h5>+254 718 832 651</h5>
-          </div>
-          <div class="contact-option">
-            <i class="fab fa-instagram"></i>
-            <h4>Instagram</h4>
-            <h5>@lewis_waitiki</h5>
-          </div>
-          <div class="contact-option">
-            <i class="fa-solid fa-phone"></i>
-            <h4>Phone</h4>
-            <h5>+254 718 832 651</h5>
-          </div>
-        </div>
-        <div>
-          <form action="#" method="post" id="form">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer reveal">
-      <div class="footer-container">
-        
-        <!-- Logo or Branding -->
-        <div class="footer-column">
-          <div class="footer-logo">LW</div>
-          <p>Lewis Waitiki</p>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
         </div>
 
-        <!-- Quick Links -->
-        <div class="footer-column">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="#about">About Me</a></li>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#tech-stack">stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
+        </nav>
+      </div>
+    </header>
 
-        <!-- Contact Info -->
-        <div class="footer-column">
-          <h4>Contact</h4>
-          <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:lewiswaitiki9@gmail.com">lewiswaitiki9@gmail.com</a></p>
-          <p><i class="fas fa-phone"></i> <a href="tel:+254718832651">+254 718 832 651</a></p>
-          <div class="footer-socials">
-            <a href="https://github.com/lewiswaitiki" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/lewis_waitiki/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=254718832651" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <!-- Hero Section -->
+    <section id="hero" class="fade-in">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Full Stack Developer & Python Specialist</h1>
+          <p>
+            I build scalable web applications with clean code, modern design,
+            and user-focused experiences. Based in Nairobi, Kenya.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+      <div class="container">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="images/portfolio-img.jpg" alt="Lewis Waitiki" />
+          </div>
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              I'm a passionate Full Stack Developer with a Bachelor's degree in
+              Computer Science from The Catholic University of Eastern Africa. I
+              specialize in building modern web applications using Python,
+              Django, Flask, and JavaScript.
+            </p>
+            <p>
+              With expertise in both frontend and backend technologies, I create
+              complete solutions that are scalable, performant, and
+              user-friendly. I'm constantly learning new technologies and
+              improving my skills to stay at the forefront of web development.
+            </p>
+            <div class="skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">WordPress</span>
+            </div>
+            <a
+              href="cv/lewis_waitiki_resume.pdf"
+              class="btn"
+              target="_blank"
+              style="margin-top: 2rem"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+      <div class="container">
+        <h2>My Services</h2>
+        <div class="services-container">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Full Stack Development</h3>
+            <p>
+              End-to-end web development from frontend UI to backend APIs and
+              database design using modern technologies.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Backend Development</h3>
+            <p>
+              Robust server-side development with Python, Django, Flask, and
+              PostgreSQL for scalable applications.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsive Web Design</h3>
+            <p>
+              Modern, mobile-first designs that work seamlessly across all
+              devices and screen sizes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img
+              src="images/ecommerce-pr-img.png"
+              alt="E-commerce Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>E-commerce Platform</h3>
+              <p>
+                A full-featured e-commerce website built with Flask, PostgreSQL,
+                and JavaScript. Includes user authentication, product
+                management, shopping cart, and payment integration.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lewiswaitiki/Ecommerce"
+                  class="btn"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a href="#" class="btn btn-outline">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="images/unistay-img.png"
+              alt="Student Accommodation"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>Unistay - Student Accommodation</h3>
+              <p>
+                A platform connecting university students with accommodation
+                options. Built with Django, PostgreSQL, and modern frontend
+                technologies.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lewiswaitiki/unistay"
+                  class="btn"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a href="#" class="btn btn-outline">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="images/bilal-automarts-img.png"
+              alt="Car Dealership"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>Bilal Automarts</h3>
+              <p>
+                A car dealership website with inventory management, customer
+                inquiries, and test drive booking. Built with Django and
+                JavaScript.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lewiswaitiki/bilal_automarts"
+                  class="btn"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a href="#" class="btn btn-outline">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="fade-in">
+      <div class="container">
+        <h2>My Tech Stack</h2>
+        <p
+          class="text-center"
+          style="text-align: center; max-width: 700px; margin: 0 auto 2rem"
+        >
+          I work with modern, powerful technologies to build fast, secure, and
+          scalable applications
+        </p>
+
+        <div class="tech-container">
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python"
+              class="tech-icon"
+            />
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+              alt="Django"
+              class="tech-icon"
+            />
+            <span>Django</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+              alt="Flask"
+              class="tech-icon"
+            />
+            <span>Flask</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              class="tech-icon"
+            />
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL"
+              class="tech-icon"
+            />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+              class="tech-icon"
+            />
+            <span>HTML5</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+              class="tech-icon"
+            />
+            <span>CSS3</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+              class="tech-icon"
+            />
+            <span>Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+          <div>
+            <p style="margin-bottom: 2rem">
+              Have a project in mind or want to discuss potential opportunities?
+              I'd love to hear from you!
+            </p>
+
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h4>Email</h4>
+                <p>lewiswaitiki9@gmail.com</p>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <h4>Phone</h4>
+                <p>+254 718 832 651</p>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <h4>WhatsApp</h4>
+                <p>+254 718 832 651</p>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h4>Location</h4>
+                <p>Nairobi, Kenya</p>
+              </div>
+            </div>
+
+            <div class="social-links" style="margin-top: 3rem">
+              <a href="https://github.com/lewiswaitiki" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/lewis_waitiki/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=254718832651"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  placeholder="Project Inquiry"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn" style="width: 100%">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="fade-in">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>Lewis Waitiki</h3>
+            <p>
+              Full Stack Developer specializing in Python, Django, and modern
+              web technologies. Creating digital solutions that drive results.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">Backend Development</a></li>
+              <li><a href="#services">API Development</a></li>
+              <li><a href="#services">WordPress Development</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+            <p><i class="fas fa-envelope"></i> lewiswaitiki9@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +254 718 832 651</p>
+
+            <div class="social-links">
+              <a href="https://github.com/lewiswaitiki" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/lewis_waitiki/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=254718832651"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
           </div>
         </div>
 
+        <div class="copyright">
+          <p>&copy; 2026 Lewis Waitiki. All rights reserved.</p>
+        </div>
       </div>
-
-      <hr>
-      <p>&copy; 2025 Lewis Waitiki | All Rights Reserved</p>
     </footer>
-
-
-    <!-- JavaScript -->
     <script src="js/scripts.js"></script>
   </body>
 </html>
